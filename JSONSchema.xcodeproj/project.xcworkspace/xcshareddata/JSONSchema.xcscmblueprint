@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8DEF988518B096DC94FB5E9853D48A277D3767FF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8DEF988518B096DC94FB5E9853D48A277D3767FF" : 0,
+    "AAB69736B7730C9ED5D37FB7B1D6251F46C097D6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "917F24CC-F380-4466-BA72-B005CAA139CA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8DEF988518B096DC94FB5E9853D48A277D3767FF" : "JSONSchema.swift\/",
+    "AAB69736B7730C9ED5D37FB7B1D6251F46C097D6" : "JSONSchema.swift\/JSONSchemaTests\/Cases\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JSONSchema",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JSONSchema.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sauvage7\/JSONSchema.swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8DEF988518B096DC94FB5E9853D48A277D3767FF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/json-schema\/JSON-Schema-Test-Suite",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AAB69736B7730C9ED5D37FB7B1D6251F46C097D6"
+    }
+  ]
+}
