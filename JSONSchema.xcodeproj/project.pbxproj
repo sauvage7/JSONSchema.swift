@@ -58,7 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		087106221B837F3F00D1DABF /* JSONSchemaTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JSONSchemaTests-Bridging-Header.h"; path = "JSON-Schema-Test-Suite/tests/JSONSchemaTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		087106231B837F3F00D1DABF /* BaseDynamicSwiftTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseDynamicSwiftTestCase.m; path = JSONSchemaTests/BaseDynamicSwiftTestCase.m; sourceTree = SOURCE_ROOT; };
 		087106251B8384BB00D1DABF /* BaseDynamicSwiftTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseDynamicSwiftTestCase.h; path = JSONSchemaTests/BaseDynamicSwiftTestCase.h; sourceTree = SOURCE_ROOT; };
 		27B640C61AAB0EDC005C8641 /* JSONSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSchema.swift; sourceTree = "<group>"; };
@@ -104,6 +103,7 @@
 		27CF7EF41A9B9EDA0063FDE4 /* JSONSchemaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONSchemaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CF7EFA1A9B9EDA0063FDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27CF7EFB1A9B9EDA0063FDE4 /* JSONSchemaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSchemaTests.swift; sourceTree = "<group>"; };
+		E2FD27871C848AC900760FA0 /* JSONSchemaTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONSchemaTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,9 +234,9 @@
 		27CF7EF81A9B9EDA0063FDE4 /* JSONSchemaTests */ = {
 			isa = PBXGroup;
 			children = (
-				087106251B8384BB00D1DABF /* BaseDynamicSwiftTestCase.h */,
+				E2FD27871C848AC900760FA0 /* JSONSchemaTests-Bridging-Header.h */,
 				087106231B837F3F00D1DABF /* BaseDynamicSwiftTestCase.m */,
-				087106221B837F3F00D1DABF /* JSONSchemaTests-Bridging-Header.h */,
+				087106251B8384BB00D1DABF /* BaseDynamicSwiftTestCase.h */,
 				27CF7EFB1A9B9EDA0063FDE4 /* JSONSchemaTests.swift */,
 				27B640CC1AAB12CB005C8641 /* JSONSchemaCases.swift */,
 				27B640CE1AAB13A8005C8641 /* tests */,
@@ -546,6 +546,9 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -554,7 +557,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JSONSchemaTests/JSON-Schema-Test-Suite/tests/JSONSchemaTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSONSchemaTests/JSONSchemaTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -565,11 +568,14 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = "";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = "";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "";
 				INFOPLIST_FILE = JSONSchemaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocode.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JSONSchemaTests/JSON-Schema-Test-Suite/tests/JSONSchemaTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSONSchemaTests/JSONSchemaTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
