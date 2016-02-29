@@ -280,7 +280,7 @@ func validateUniqueItems(value:AnyObject) -> ValidationResult {
 
 func validatePropertiesLength(length:Int, comparitor:((Int, Int) -> (Bool)), error:String)(value:AnyObject)  -> ValidationResult {
   if let value = value as? [String:AnyObject] {
-    if !comparitor(length, value.keys.array.count) {
+    if !comparitor(length, Array(value.keys).count) {
       return .Invalid([error])
     }
   }
@@ -317,17 +317,15 @@ func validateProperties(properties:[String:Validator]?, patternProperties:[Strin
 
     if let patternProperties = patternProperties {
       for (pattern, validator) in patternProperties {
-        var error:NSError?
         do {
           let expression = try NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions(rawValue: 0))
           let keys = value.keys.filter {
             (key:String) in expression.matchesInString(key, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, key.characters.count)).count > 0
           }
 
-          allKeys.addObjectsFromArray(keys.array)
+          allKeys.addObjectsFromArray(Array(keys))
           results += keys.map { key in validator(value[key]!) }
-        } catch var error1 as NSError {
-          error = error1
+        } catch {
           return .Invalid(["[Schema] '\(pattern)' is not a valid regex pattern for patternProperties"])
         }
       }
